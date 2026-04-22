@@ -1,11 +1,12 @@
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+
+import { prismaAdapterStubInstances } from '../test/prisma-adapter-stub.js';
 import {
   type PrismaClient as PrismaClientStub,
   prismaClientStubInstances,
 } from '../test/prisma-client-stub.js';
-import { prismaAdapterStubInstances } from '../test/prisma-adapter-stub.js';
 import { createContext } from './context.js';
 
 const makeContext = async (
