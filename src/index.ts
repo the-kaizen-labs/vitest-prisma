@@ -1,7 +1,10 @@
 import type { Environment } from 'vitest/environments';
+
 import { builtinEnvironments } from 'vitest/environments';
-import { createContext } from './context.js';
+
 import type { PrismaEnvironmentOptions } from './dts/index.js';
+
+import { createContext } from './context.js';
 
 const environmentName = 'prisma';
 
